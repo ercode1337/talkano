@@ -1,2 +1,2 @@
-# talkano
-Talkano is a website, where strangers can connect anonymously.
+# pdftranslate
+Software that translates the content of a given pdf file

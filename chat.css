@@ -1,0 +1,75 @@
+/* CSS for chat UI */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #6e6e80;
+}
+
+#chat-container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#chat-header {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#chat-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#chat-messages {
+    background-color: #fff;
+    min-height: 400px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#chat-input {
+    margin-top: 20px;
+    display: flex;
+}
+
+#message-input {
+    flex: 1;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#send-button {
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#send-button:hover { 
+    cursor:pointer;
+    background-color: #ffffff;
+    color: #000000;    
+}
+
+#find-button {
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#find-button:hover { 
+    cursor:pointer;
+    background-color: #ffffff;
+    color: #000000;    
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talkano Chat</title>
+    <!-- Link to new CSS stylesheet for chat UI -->
+    <link rel="stylesheet" type="text/css" href="chat.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- HTML layout for chat UI -->
+    <div id="header">
+        <div id="logo">talkano.</div>
+        <div class="slogan"></div>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="TOS">TOS</a>
+        <li><a href="/about">About</a></li>
+        </ul>
+    </div>
+    <div id="chat-container">
+        <div id="chat-messages">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div id="chat-input">
+            <button id="find-button">Find new?</button>
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <!-- Link to new JavaScript file for chat functionality -->
+    <script>
+        // Retrieve the selected tags from localStorage
+const selectedTags = JSON.parse(localStorage.getItem('selectedTags'));
+
+// Display the selected tags on the chat page
+const tagsContainer = document.getElementById('selected-tags');
+selectedTags.forEach(tag => {
+  const tagEl = document.createElement('span');
+  tagEl.textContent = tag;
+  tagsContainer.appendChild(tagEl);
+});
+    </script>
+    <script src="chat.js"></script>
+</body>
+</html>
